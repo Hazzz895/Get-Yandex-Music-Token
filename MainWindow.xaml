@@ -1,0 +1,25 @@
+﻿<Window x:Class="GetYandexMusicToken.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:local="clr-namespace:GetYandexMusicToken"
+        mc:Ignorable="d"
+        Title="Получения токена ЯМ" Height="450" Width="800">
+    <Grid>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Токен"  FontSize="24" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"/>
+            <TextBlock Text="" x:Name="token" FontSize="24" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"/>
+            <Button Content="Скопировать" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
+            <Button Content="Очистить куки" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        </StackPanel>
+        
+        <TextBlock Background="White" FontSize="24" Text="Загрузка, Подождите пару секунд" x:Name="Loading" TextAlignment="Center" TextWrapping="Wrap"/>
+        
+        <!--  https://www.nuget.org/packages/Microsoft.Web.WebView2/ -->
+        <wv2:WebView2 Source="https://oauth.yandex.ru/authorize?response_type=token&amp;client_id=23cabbbdc6cd418abb4b39c32c41195d" x:Name="webView"/>
+    
+    </Grid>
+</Window>
