@@ -1,8 +1,11 @@
-# Скачать из [страницы релизов](https://github.com/Hazzz895/Get-Yandex-Music-Token/releases/tag/v1.0)
+# Скачать последнюю версию из [страницы релизов](https://github.com/Hazzz895/Get-Yandex-Music-Token/releases/tag/v1.2)
+
+# Скачать версию с урезанным интефейсом из [страницы релизов](https://github.com/Hazzz895/Get-Yandex-Music-Token/releases/tag/v1.0)
+
 
 ## Как получить токен?
 
-1. Скачайте [Release.zip](https://github.com/Hazzz895/Get-Yandex-Music-Token/releases/tag/v1.0),
+1. Скачайте [Release.zip](https://github.com/Hazzz895/Get-Yandex-Music-Token/releases/tag/v1.2),
 2. Извлеките файлы в любую папку,
 3. Запустите GetYandexMusicToken.exe,
 4. Пройдите процесс авторизации,
